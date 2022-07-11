@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Project_AMD\Project_AMD2022\2022AMD_project\2022AMD_project\Login.h(128): warning C4715: 'Login::logareAdm': not all control paths return a value
+C:\Project_AMD\Project_AMD2022\2022AMD_project\2022AMD_project\Login.h(162): warning C4715: 'Login::logareClient': not all control paths return a value
+  2022AMD_project.vcxproj -> C:\Project_AMD\Project_AMD2022\2022AMD_project\Debug\2022AMD_project.exe
