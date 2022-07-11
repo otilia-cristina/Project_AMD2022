@@ -1,7 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include <string>
-//#include"Products.h"
+#include"Products.h"
 #include"Login.h"
 
 
@@ -82,5 +82,31 @@ int main()
 		}
 
 	}
+	// daca s-a logat un admin sau un client se afiseaza meniul, altfel nu
+
+	if ((s > 0) || (ok > 0))
+	{
+		Menu m;
+		m.categorii("Products.txt");
+		cout << "\n";
+		cout << "********************************** THIS IS THE STORE MENU ********************************************" << endl;
+		cout << "\n";
+		m.print_menu();
+
+		cout << "\n";
+		cout << "*********************** YOU CAN FILTER THE PRODUCTS AFTER ************************" << endl;
+
+		cout << "\n";
+		cout << "\t\t\t\t|   1 Price    |\n";
+		cout << "\n";
+
+		Menu p;
+		p.filtrareprod("Products.txt");
+		p.print_filtrarePret();
+
+
+	}
+
+
 	return 0;
 }

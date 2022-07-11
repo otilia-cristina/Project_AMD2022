@@ -144,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h" />
+    <ClInclude Include="Products.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
