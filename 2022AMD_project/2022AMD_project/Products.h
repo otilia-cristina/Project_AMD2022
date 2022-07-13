@@ -128,7 +128,7 @@ class Menu
 public:
 	string m_category, m_name, m_data;
 	int m_price;
-	vector<Menu>menuAll;
+	 vector<Menu>menuAll;
 	vector<Menu> menuCPUs;
 	vector<Menu> menuGPUs;
 	vector<Menu> menuAPUs;
@@ -138,6 +138,9 @@ public:
 	void filtrareprod(const string& filee);
 	void filtrare(string m_category, string m_name, int m_price, string m_data);
 	void print_filtrarePret();
+	
+		
+	
 };
 void Menu::initializ(string m_category, string m_name)
 {
@@ -275,7 +278,6 @@ void Menu::print_filtrarePret()
 
 
 	}
-
 
 }
 

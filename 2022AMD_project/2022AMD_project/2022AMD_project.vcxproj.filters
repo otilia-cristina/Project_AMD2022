@@ -17,6 +17,9 @@
   <ItemGroup>
     <Text Include="Users.txt" />
     <Text Include="Products.txt" />
+    <Text Include="ProduseleSterse.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">

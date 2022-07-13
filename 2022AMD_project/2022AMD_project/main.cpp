@@ -30,9 +30,10 @@ int main()
 	cin >> user;
 	int ok = 0;
 	int s = 0;
+	
 	if (user == "Administrator")
 	{
-
+		
 		bool status1 = l.logareAdm();
 
 		if (!status1)
@@ -50,12 +51,27 @@ int main()
 			cout << "*********************** YOU CAN:ADD ITEMS,DELETE ITEMS,ADD ADMIN ********************" << endl;
 			cout << "\n";
 
-			cout << "\n\t\t\t*------------ 1.   Add the product   ------------*";
-			cout << "\n\t\t\t*------------ 2.   Add new admin     ------------*";
-			cout << "\n\t\t\t*------------ 3.  Delete the product ------------*";
+			cout << "\n\t\t\t*------------ 1.   Add the product     ------------*";
+			cout << "\n\t\t\t*------------ 2.   Delete the product  ------------*";
+			cout << "\n\t\t\t*------------ 3.   Add new admin       ------------*";
 			cout << "\n";
 			cout << "\t\t\t\t  Please choose    \n";
 
+
+			Administrator a1;
+			int choice;
+			cin >> choice;
+			switch (choice)
+			{
+			case 1:
+				//incercare
+				//a1.addProduse();
+			case 2:
+				//incercare
+				//a1.deleteProduse();
+			default:
+				break;
+			}
 
 		}
 	}
@@ -77,6 +93,7 @@ int main()
 			cout << "************************ WELCOME CLIENT AMD Drivers and Support ************************" << endl;
 			cout << "************************ YOU CAN:ADD/REMOVE ITEMS FROM YOURS CART **********************" << endl;
 			cout << "\n";
+			
 
 
 		}
@@ -87,26 +104,25 @@ int main()
 	if ((s > 0) || (ok > 0))
 	{
 		Menu m;
+		
 		m.categorii("Products.txt");
 		cout << "\n";
 		cout << "********************************** THIS IS THE STORE MENU ********************************************" << endl;
 		cout << "\n";
 		m.print_menu();
-
+		
 		cout << "\n";
 		cout << "*********************** YOU CAN FILTER THE PRODUCTS AFTER ************************" << endl;
 
 		cout << "\n";
 		cout << "\t\t\t\t|   1 Price    |\n";
 		cout << "\n";
-
+	
 		Menu p;
 		p.filtrareprod("Products.txt");
 		p.print_filtrarePret();
-
-
+		
+		
 	}
-
-
 	return 0;
 }
